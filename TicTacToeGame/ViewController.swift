@@ -13,15 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     
     var board = [[" "," "," "],[" "," "," "],[" "," "," "]]
-    var currentPlayer = String() {
-        didSet {
-            lblStatus.text = "Player \(currentPlayer) turn"
-        }
+    var currentPlayer = String()
+    enum Players: String {
+        case X = "X"
+        case O = "O"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentPlayer = "X"
+        setFirstPlayer(name: .O)
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -64,6 +64,11 @@ class ViewController: UIViewController {
         board = [[" "," "," "],[" "," "," "],[" "," "," "]]
         buttons.forEach({ $0.setTitle("", for: .normal) })
         buttons.forEach({ $0.isUserInteractionEnabled = true })
+    }
+    
+    func setFirstPlayer(name: Players) {
+        currentPlayer = name.rawValue
+        lblStatus.text = "Player \(currentPlayer) turn"
     }
     
     func makeMove(row: Int, col: Int) -> Bool {
