@@ -9,6 +9,7 @@ The project is purely developed for educational purposes.
 
 Here are the implementation photos and video of it.
 
-:--------------------:|:-------------------:|:----------------------:|:-----------------:
-![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-1.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-2.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-3.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-video.mp4)
- 
+
+Startup                    | O turn                    | O winner                  |  Demo
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-1.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-2.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-ss-3.png)  |  ![](https://github.com/kishanbarmawala/TicTacToeGame/blob/main/Screenshots/demo-video.gif)
