@@ -1,10 +1,10 @@
 # TicTacToeGame
-The TicTacToe iOS game was developed by native UIKit framework without using SpriteKit or any third-party frameworks.
+The iOS TicTacToe game develop by native UIKit framework without using SpriteKit or any third-party frameworks.
 
 ### Description
-
-- The game is developed with very simple and easy fundamentals.
-- The project is purely developed for educational purposes.
+- It is purely written in Swift 5.0 with the Storyboard design
+- It is developed with very easy and simple manner with easy fundamentals.
+- It is purely developed for educational purposes.
 - Here are the implementation photos and video of it.
 
 
