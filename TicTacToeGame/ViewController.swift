@@ -26,8 +26,6 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         
-        sender.setTitle(currentPlayer, for: .normal)
-        
         var col: Int = 0
         var row: Int = 0
         let clickIndex = sender.tag
@@ -44,6 +42,7 @@ class ViewController: UIViewController {
         }
         
         if makeMove(row: row, col: col) {
+            sender.setTitle(currentPlayer, for: .normal)
             if checkWin() {
                 showWinnerAlert(isDraw: false)
                 return
