@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     
     var board = [[" "," "," "],[" "," "," "],[" "," "," "]]
     var currentPlayer = String()
-    enum Players: String {
-        case X = "X"
-        case O = "O"
-    }
+    let startPlayer = "X"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setFirstPlayer(name: .O)
+        setFirstPlayer()
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -52,21 +49,19 @@ class ViewController: UIViewController {
                 return
             }
             switchPlayer()
-        } else {
-            print("Invalid move, try again")
         }
         
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
-        currentPlayer = "X"
+        setFirstPlayer()
         board = [[" "," "," "],[" "," "," "],[" "," "," "]]
         buttons.forEach({ $0.setTitle("", for: .normal) })
         buttons.forEach({ $0.isUserInteractionEnabled = true })
     }
     
-    func setFirstPlayer(name: Players) {
-        currentPlayer = name.rawValue
+    func setFirstPlayer() {
+        currentPlayer = startPlayer
         lblStatus.text = "Player \(currentPlayer) turn"
     }
     
@@ -123,6 +118,7 @@ class ViewController: UIViewController {
         present(alert, animated: true)
         buttons.forEach({ $0.isUserInteractionEnabled = false })
         lblStatus.text = message
+        currentPlayer = startPlayer
     }
     
 }
